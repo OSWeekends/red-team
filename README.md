@@ -1,3 +1,30 @@
+## ¡únete al equipo!
+
+Estamos en [Slack](https://slack.osweekends.com)
+
+## Objetivos del Equipo
+
+**Objetivos Individuales dentro del Red Team**
+- Pasarlo bien
+- Aprender mucho juntos
+- compartir ese conocimiento con el resto de OSW y comunidades
+- Tener un entorno sano y seguro para aprender
+
+**Objetivos del Red team como conjunto de Guilders**
+- Entrenar un Red Team (paso 1)
+- Atacar nuestra propia infraestructura para detectar errores (paso 2)
+- Generar un ranking que motive al equipo, al estilo CTF (paso 3)
+- Abrir más adelante esta política de Bug Hunters con HackMadrid y las comunidades de %27 (paso 4)
+- :trollface: dominar el mundo (paso 5)
+
+**Como estamos hoy?**
+- @Kr0n0 es el líder espiritual/guru/referencia/sabio remoto en el área que nos ayudará a tomar el camino correcto y nos determinará por donde debemos ir
+- @Falocab en principio apoyará y coordinará el trabajo del equipo en el día a día
+- @ulisesgascon buscarme la vida para conseguir recursos y montar una infraestructura para tener maquinas y cosas donde desplegar entornos para entrenar con máquinas vulnerables y ayudar con los ejercicios del tipo Capture The Flag del equipo
+
+
+## RoadMap
+
 ### 1. ¿Qué diablos es un red team?
 Vamos a intentar una definición primero... Un red team es un equipo de pentesters o hackers éticos que trabajan de forma conjunta para atacar objetivos de una empresa de forma que comprueben y ayuden a los del blue team (los “defensores”) a comprobar las defensas.
 
