@@ -83,3 +83,11 @@ Mientras iremos mirando cosillas que puedan estar interesantes para "jugar".
 Si tenéis cualquier duda comentadla por el canal. La idea es que todos aprendamos y podamos divertirnos con esto, así que a por ello :)
 
 Kr0n0 (ccvals@linux.com) - 181004 - Canal #red-team OSW 
+
+### Participantes:
+
+- [Kr0no](https://github.com/Kr0n0)
+- [Ulises Gascón](https://github.com/UlisesGascon)
+- [Francisco]()
+- [ElenaMLopez](https://github.com/ElenaMLopez)
+
