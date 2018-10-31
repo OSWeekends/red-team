@@ -1,0 +1,55 @@
+Distribuciones:
+  - nombre: Kali
+    url: https://www.kali.org/
+
+  - nombre: Metasploitable
+    url: https://information.rapid7.com/download-metasploitable-2017.html
+
+  - nombre: Vulnerable By Design
+    url: https://www.vulnhub.com/
+
+Herramientas:
+  - nombre: Nmap
+    url: https://information.rapid7.com/download-metasploitable-2017.html
+
+  - nombre: DirBuster
+    url: https://www.owasp.org/index.php/Category:OWASP_DirBuster_Project
+
+  - nombre: Burp Suite
+    url: https://portswigger.net/burp
+
+  - nombre: Nikto2
+    url: https://cirt.net/Nikto2
+
+Wargames:
+  - nombre: Atenea
+    url: https://atenea.ccn-cert.cni.es/
+
+  - nombre: Hack The Box
+    url: https://www.hackthebox.eu/
+
+YouTube:
+  - nombre: IppSec
+    url: https://www.youtube.com/channel/UCa6eh7gCkpPo5XXUDfygQQA
+
+Podcast:
+  - nombre: Brakeing Down Security Podcast 
+    url: https://www.brakeingsecurity.com/
+
+Telegram:
+  - nombre: HackTheBox Hispano
+    url: https://t.me/joinchat/AI8D7UDTIfAe021QuVV7lQ
+
+Libros:
+  - nombre: The Hacker Playbook
+    url: http://thehackerplaybook.com/dashboard/
+
+  - nombre: The Web Application Hacker's Handbook
+    url: "https://www.wiley.com/en-us/The+Web+Application+Hacker%27s+Handbook%3A+Finding+and+Exploiting+Security+Flaws%2C+2nd+Edition-p-9781118026472"
+
+Otros:
+  - nombre: Wiki de @antlarac
+    url: http://grayhat.shoutwiki.com/wiki/Main_Page
+
+  - nombre: Reversing CTF challenges list 
+    url: https://github.com/naivenom/reversing-list/
