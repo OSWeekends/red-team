@@ -1,4 +1,4 @@
-# CAPITULO 1. TERMINAL
+# CAPITULO 1. Terminal
 
 **apt-get install terminator**
 Usar el software Terminator = nos permite dividir la terminal de una manera muy práctica
@@ -166,3 +166,62 @@ indicado
 **| cut -d “ “ -f4** = nos mostraría a partir del espacio 4º (en este caso solo las ips)
 
 **; done** = nos iría mostrando el proceso
+
+# CAPÍTULO 2. Evitar que nos identifiquen como origen de la conexión
+
+Recursos extras:
+[Mailinator](https://www.mailinator.com/) = página web para usar correos públicos
+[Recivefreesms](https://smsreceivefree.com/) = para recibir mensajes móviles online
+
+## NOCIONES BASICAS
+
+**Tunelización de protocolos** = meter un protocolo dentro de otro.
+
+Por ejemplo si quisiéramos utilizar un protocolo SSH pero en nuestra empresa solo permiten el tráfico HTTP podemos tunelizar el protocolo SSH a través del tráfico HTTP.
+Crearíamos un túnel HTTP y por ese túnel lo usaríamos para utilizar el protocolo SSH.
+![Túnel](img/tunel.png)
+
+**Servidores proxy** = sistema que funciona como un punto intermedio (*middleaware*).
+
+Los servidores proxys son servidores que se utilizan como intermediarios, en el ámbito de la informática un servidor proxy es un servidor que utilizamos para escondernos, si nosotros estamos utilizando un proxy cuando el servidor victima este mirando, vera la dirección del servidor proxy.
+
+Una técnica utilizada es el **encademiento de proxys**, quiere decir que encadenamos varios proxys para que sea más difícil ser rastreados ya que pasamos por todos ellos para poder conectarnos, si utilizamos por ejemplo un proxy de China y otro de Estados Unidos por ejemplo tendrán un enfrentamiento geopolítico y estos países no colaborarían entre ellos.
+
+![Proxy](img/proxy.png)
+
+**VPN virtual prívate network** = conexión punto a punto cifrada.
+
+Todo nuestro tráfico se va a cifrar desde nuestro punto hasta el servidor VPN, así no podrán interceptar el tráfico ya que va cifrado, recomendable por ejemplo en wifis públicas.
+En el ámbito del hacking las VPN se usan para conectarnos desde servidores VPN de diferentes países.
+
+![VPN](img/vpn.png)
+
+### TOR
+
+#### NAVEGAR DE FORMA ANONIMA
+
+TOR es una abreviatura de *The Onion Project*, un proyecto que busca el poder crear una red de comunicaciones distribuida de baja latencia por encima de la capa de internet de manera que nunca se revelen los datos de los usuarios que la utilizan, manteniéndose así como una red privada y anónima.
+
+Para configurar Google Chrome con anonimato del servidor Thor lo único que hay que hacer es añadirle en su proxy el servicio que ha levantado Thor (Windows):
+![Tor 1](img/tor.png)
+![Tor 2](img/tor2.png)
+
+#### INSTALAR TOR EN KALI LINUX
+
+Para instalar tor en Kali:
+```
+apt-get install tor 
+```
+Para iniciar el servicio Tor:
+```
+service tor start
+```
+Buscamos el puerto que este a la escucha en linux suele ser 9050:
+```
+netstat -ano | head = 
+```
+
+Después accedemos a Firefox e introducimos el proxy manual como en la imagen anterior y el puerto de escucha obtenido anteriormente.
+
+
+
