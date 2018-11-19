@@ -223,5 +223,114 @@ netstat -ano | head =
 
 Después accedemos a Firefox e introducimos el proxy manual como en la imagen anterior y el puerto de escucha obtenido anteriormente.
 
+#### PROXY
 
+**Proxies web** = son proxies online para buscar una pagina en concreto, poco recomendables.
+
+- [https://hide.me/es/proxy](https://hide.me/es/proxy)
+
+- [https://kproxy.com/](https://kproxy.com/)
+
+- [https://hidester.com/es/proxy/](https://hidester.com/es/proxy/)
+
+**Listas de proxies gratuitos** = proxies para usar de forma gratuita, poco recomendado por el sniffeo que nos puedan hacer.
+
+**GOOGLE : free proxy list**
+
+[https://proxy-list.org/spanish/index.php](https://proxy-list.org/spanish/index.php)
+
+[http://proxylist.hidemyass.com/](http://proxylist.hidemyass.com/)
+
+[http://free-proxy-list.net/anonimous-proxy.html](http://free-proxy-list.net/anonimous-proxy.html)
+
+[http://samair.ru/proxy/](http://samair.ru/proxy/)
+
+
+
+#### PROXYCHAINS
+
+
+El archivo **.conf** se encuentra en la ruta ```/etc/proxychains.conf``` , podemos hacer un cp y copiarlo en la raíz que queramos para configurarlo mediante nano.
+
+```quiet_mode``` = des comentarlo para ver la información cuando usamos proxychains del envio del mensaje.
+```proxy_dns``` = des comentarlo para que el dns también pase por el proxy.
+
+En la última línea modificaremos el tipo, mas la IP , más el puerto ejemplo:
+
+```socks4 127.0.0.1 9050```
+Podemos poner varios proxies y así encadenaremos proxies, mayor anonimato pero mayor tiempo de ejecución.
+
+
+Para lanzar proxychains desde el directorio donde se encuentra el .conf editado por nosotros poner proxychains delante del programa que queramos que utilice el proxy:
+
+```
+root@kali:~# proxychains xxxxx
+```
+Hay que tener en cuenta que solo enruta el trafico TCP (**No realizar escaneos mediante esta herramienta**)
+
+#### FOXYPROXY (Standard)
+
+Es un plugin de Firefox para definir diferentes perfiles. Básicamente es un plugin que se utiliza solo para el navegador y es muy práctico, ya que con un solo clic derecho en el icono que nos aparecerá al lado de la barra de navegación podemos cambiar de proxy.
+
+![Foxyproxy](img/foxy.png)
+
+#### VPN
+
+**Gratuitas**:
+
+- Frootvpn
+
+- Tunnelbear
+
+**De pago**:
+
+- ExpressVPN – Caribe
+
+- NordVPN – Panamá
+
+- TorGuard – Antillas
+
+- IPredator – Chipre
+
+- PureVPN – Hong Kong
+
+
+Las de pago suelen venir con un software que simplemente con iniciarlo podemos elegir el país de donde nos conectamos.
+
+#### CAMBIAR LA MAC (Windows, Linux)
+
+En las redes, la dirección MAC es un identificador de 48 bits que corresponde de forma única a una tarjeta o dispositivo de red. Se conoce también como dirección física, y es única para cada dispositivo.
+
+**WINDOWS**
+
+Mediante un ```ipconfig /all``` aparecerá la Dirección física  XX-XX-XX-XX-XX-XX compuesto por 6 grupos de 2 Hexadecimales.
+
+Para cambiarla accedemos a administración de dispositivos y en **Propiedades/Opciones avanzadas/Network Access** podremos poner el valor de la dirección MAC que queramos.
+![ip config windows](img/ipconfig_win.png)
+
+
+Aunque reiniciemos el ordenador seguirá utilizando esa MAC a diferencia de linux que cuando se reinicia vuelve a usar la MAC real.
+
+
+**LINUX**
+
+Mediante un ifconfig en la zona ether XX:XX:XX:XX:XX:XX compuesto por 6 grupos de 2 hexadecimales.
+
+1. Debemos tumbar el servicio de red al que queremos cambiar la dirección MAC:
+```
+root@kali:~#ifconfig “red(eth0, wlan0 etc)” down
+```
+2. Con macchanger cambiamos la MAC, el programa nos dará una pequeña información de los cambios. 
+```
+root@kali:~#macchanger -m XX:XX:XX:XX:XX:XX “red(eth0, wlan0 etc)”
+Curret MAC: II:II:II:II:II:II (SONY SYSTEM)
+Permanence MAC: II:II:II:II:II:II (SONY SYSTEM) 
+New MAC: XX:XX:XX:XX:XX:XX (SAMSUNG SYSTEM)
+```
+```-r random``` y no tendríamos que poner MAC
+
+3. Para finalizar levantamos de nuevo la red y comprobamos con un ifconfig
+```
+root@kali:~# ifconfig “red(eth0, wlan0 etc)” up
+```
 
