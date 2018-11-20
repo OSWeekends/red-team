@@ -202,7 +202,7 @@ En el ámbito del hacking las VPN se usan para conectarnos desde servidores VPN 
 
 TOR es una abreviatura de *The Onion Project*, un proyecto que busca el poder crear una red de comunicaciones distribuida de baja latencia por encima de la capa de internet de manera que nunca se revelen los datos de los usuarios que la utilizan, manteniéndose así como una red privada y anónima.
 
-Para configurar Google Chrome con anonimato del servidor Thor lo único que hay que hacer es añadirle en su proxy el servicio que ha levantado Thor (Windows):
+Para configurar Google Chrome con anonimato del servidor Tor lo único que hay que hacer es añadirle en su proxy el servicio que ha levantado Tor (Windows):
 ![Tor 1](img/tor.png)
 ![Tor 2](img/tor2.png)
 
