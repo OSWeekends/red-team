@@ -8,6 +8,9 @@ Distribuciones:
   - nombre: Vulnerable By Design
     url: https://www.vulnhub.com/
 
+  - nombre: Small CTF challenges running on Docke
+    url: https://github.com/gabemarshall/microctfs
+
 Herramientas:
   - nombre: Nmap
     url: https://information.rapid7.com/download-metasploitable-2017.html
@@ -53,3 +56,15 @@ Otros:
 
   - nombre: Reversing CTF challenges list 
     url: https://github.com/naivenom/reversing-list/
+
+  - nombre: A curated list of CTF frameworks, libraries, resources and softwares
+    url: https://github.com/apsdehal/awesome-ctf
+
+  - nombre: Compilation of commands, tips and scripts that helped me throughout Vulnhub, Hackthebox, OSCP and real scenarios
+    url: https://github.com/adon90/pentest_compilation
+
+  - nombre: A curated list of awesome Hacking tutorials, tools and resources
+    url: https://github.com/carpedm20/awesome-hacking
+
+  - nombre: A collection of hacking / penetration testing resources to make you better!
+    url: https://github.com/vitalysim/Awesome-Hacking-Resources
