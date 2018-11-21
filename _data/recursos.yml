@@ -8,7 +8,7 @@ Distribuciones:
   - nombre: Vulnerable By Design
     url: https://www.vulnhub.com/
 
-  - nombre: Small CTF challenges running on Docke
+  - nombre: Small CTF challenges running on Docker
     url: https://github.com/gabemarshall/microctfs
 
 Herramientas:
