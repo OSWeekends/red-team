@@ -20,6 +20,9 @@ Herramientas:
 
   - nombre: Nikto2
     url: https://cirt.net/Nikto2
+    
+  - nombre: Maltergo (Guia de Usuario)
+    url: https://docs.paterva.com/en/user-guide/
 
 Wargames:
   - nombre: Atenea
